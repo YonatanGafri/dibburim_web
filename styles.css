@@ -131,14 +131,15 @@ p#subtitle {
 
 .coming-soon {
     display: inline-block;
-    font-size: 0.85rem;
-    color: #1D4ED8; /* Solid medium-dark blue */
-    background-color: #DBEAFE; /* Soft blue background */
-    padding: 0.35rem 0.85rem;
+    font-size: 1rem;
+    color: #B45309; /* Soft amber/gold text */
+    background-color: #FEF3C7; /* Soft amber background */
+    padding: 0.5rem 1.2rem;
     border-radius: 50px;
-    font-weight: 600;
-    margin-top: 0.5rem;
-    border: 1px solid #BFDBFE;
+    font-weight: 700;
+    margin-top: 1rem;
+    border: 1px solid #FCD34D;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
 /* Hero Image */

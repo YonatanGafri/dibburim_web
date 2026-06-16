@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dibburim - Application de suivi et minuteur de Hitbodedut pour parler avec D.ieu">
+    <title>Dibburim | Connexion quotidienne avec D.ieu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span id="logo-text">Dibburim</span>
+        </div>
+        <div class="lang-selector">
+            <select id="language-select" aria-label="Select Language">
+                <option value="he">עברית</option>
+                <option value="en">English</option>
+                <option value="fr" selected>Français</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1 id="title">Votre temps de qualité avec D.ieu</h1>
+            <p id="subtitle">L'application Dibburim vous aide à suivre vos moments de Hitbodedut, à tenir un journal spirituel et à vous connecter profondément dans une atmosphère calme et sainte.</p>
+            <div class="badges">
+                <a href="#" class="store-badge" aria-label="Download on App Store">
+                    <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="#" class="store-badge" aria-label="Get it on Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 40px; margin-top: 4px;">
+                </a>
+            </div>
+            <p class="coming-soon" id="coming-soon">Bientôt disponible sur les App Stores !</p>
+        </div>
+        <div class="hero-image">
+            <div class="blob"></div>
+            <img src="../images/app_mockup.png" alt="Dibburim App UI" class="app-mockup">
+        </div>
+    </main>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">⏳</div>
+            <h3 id="feature1-title">Minuteur de Hitbodedut</h3>
+            <p id="feature1-desc">Fixez un temps dédié et embarquez pour un voyage intérieur de discussion avec le Créateur sans distractions.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h3 id="feature2-title">Suivi & Persévérance</h3>
+            <p id="feature2-desc">Suivez votre série quotidienne et renforcez votre connexion spirituelle jour après jour.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">✨</div>
+            <h3 id="feature3-title">Atmosphère Calme</h3>
+            <p id="feature3-desc">Un design agréable et relaxant qui vous aide à entrer dans le bon état d'esprit de paix et de sainteté.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dibburim. <span id="footer-text">Tous droits réservés.</span></p>
+    </footer>
+
+    <script>
+        document.getElementById('language-select').addEventListener('change', (e) => {
+            const lang = e.target.value;
+            const isLocal = window.location.protocol === 'file:';
+            if (lang === 'he') {
+                window.location.href = isLocal ? '../index.html' : '/';
+            } else if (lang === 'en') {
+                window.location.href = isLocal ? '../en/index.html' : '/en/';
+            } else if (lang === 'fr') {
+                window.location.href = isLocal ? 'index.html' : '/fr/';
+            } else if (lang === 'es') {
+                window.location.href = isLocal ? '../es/index.html' : '/es/';
+            }
+        });
+    </script>
+</body>
+</html>

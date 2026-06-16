@@ -1,5 +1,6 @@
 const translations = {
     he: {
+        logoText: "דיבורים",
         title: "זמן האיכות שלך עם ה'",
         subtitle: "אפליקציית Dibburim עוזרת לך לעקוב אחרי זמני ההתבודדות שלך, לנהל יומן רוחני, ולהתחבר פנימה באווירה רגועה וקדושה.",
         comingSoon: "בקרוב בחנויות האפליקציות!",
@@ -12,6 +13,7 @@ const translations = {
         footerText: "כל הזכויות שמורות."
     },
     en: {
+        logoText: "Dibburim",
         title: "Your Quality Time with God",
         subtitle: "The Dibburim app helps you track your Hitbodedut time, keep a spiritual journal, and connect deeply in a calm and holy atmosphere.",
         comingSoon: "Coming soon to App Stores!",
@@ -24,6 +26,7 @@ const translations = {
         footerText: "All rights reserved."
     },
     fr: {
+        logoText: "Dibburim",
         title: "Votre temps de qualité avec D.ieu",
         subtitle: "L'application Dibburim vous aide à suivre vos moments de Hitbodedut, à tenir un journal spirituel et à vous connecter profondément dans une atmosphère calme et sainte.",
         comingSoon: "Bientôt disponible sur les App Stores !",
@@ -36,6 +39,7 @@ const translations = {
         footerText: "Tous droits réservés."
     },
     es: {
+        logoText: "Dibburim",
         title: "Tu tiempo de calidad con Dios",
         subtitle: "La aplicación Dibburim te ayuda a rastrear tus momentos de Hitbodedut, mantener un diario espiritual y conectarte profundamente en una atmósfera tranquila y santa.",
         comingSoon: "¡Próximamente en las tiendas de aplicaciones!",
@@ -54,6 +58,7 @@ document.getElementById('language-select').addEventListener('change', (e) => {
     const t = translations[lang];
     
     // Set text contents
+    document.getElementById('logo-text').textContent = t.logoText;
     document.getElementById('title').textContent = t.title;
     document.getElementById('subtitle').textContent = t.subtitle;
     document.getElementById('coming-soon').textContent = t.comingSoon;

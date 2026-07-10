@@ -98,7 +98,7 @@ body[dir="ltr"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem 5%;
+    padding: 2rem 5% 1rem;
     flex: 1;
     gap: 3rem;
     animation: fadeIn 1s ease-out;
@@ -159,33 +159,37 @@ p#subtitle {
 
 .update-section {
     display: flex;
-    gap: 1.5rem;
-    align-items: stretch;
-    margin-top: 1.5rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 5%;
+    width: 100%;
 }
 
 .update-note {
-    flex: 1;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--text-light);
+    width: 100%;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-main);
     background: var(--white-glass);
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
+    padding: 1.5rem;
+    border-radius: 16px;
     border: 1px solid var(--white-glass-border);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
 .update-note strong {
-    color: var(--text-main);
+    color: var(--primary-color);
 }
 
 .update-video {
-    flex: 1;
-    border-radius: 12px;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16/9;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    min-height: 200px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
 }
 
 .update-video iframe {

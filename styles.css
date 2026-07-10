@@ -168,6 +168,7 @@ p#subtitle {
 
 .update-note {
     width: 100%;
+    max-width: 650px;
     font-size: 1.05rem;
     line-height: 1.6;
     color: var(--text-main);
@@ -177,10 +178,31 @@ p#subtitle {
     border: 1px solid var(--white-glass-border);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     text-align: center;
+    margin: 0 auto;
 }
 
 .update-note strong {
     color: var(--primary-color);
+}
+
+.gift-card-banner {
+    display: block;
+    background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 100%);
+    color: #78350F;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 1.15rem;
+    margin: 1.5rem auto;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.25);
+    border: 2px solid #FCD34D;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gift-card-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
 }
 
 .update-video {
